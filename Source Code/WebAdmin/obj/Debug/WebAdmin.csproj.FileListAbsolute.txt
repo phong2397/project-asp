@@ -1,0 +1,385 @@
+C:\repos\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.csprojAssemblyReference.cache
+C:\repos\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.csproj.CoreCompileInputs.cache
+C:\repos\Prj3\IceCream\WebAdmin\bin\WebAdmin.dll.config
+C:\repos\Prj3\IceCream\WebAdmin\bin\WebAdmin.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\WebAdmin.pdb
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\csc.exe
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\csc.exe.config
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\csc.rsp
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\csi.exe
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\csi.exe.config
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\csi.rsp
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.Managed.Core.targets
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.AppContext.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Collections.Immutable.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Console.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.Compression.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.FileSystem.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.Pipes.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Reflection.Metadata.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.AccessControl.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Claims.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Principal.Windows.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.ValueTuple.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.XmlDocument.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.XPath.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\vbc.exe
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\vbc.exe.config
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\vbc.rsp
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\VBCSCompiler.exe
+C:\repos\Prj3\IceCream\WebAdmin\bin\roslyn\VBCSCompiler.exe.config
+C:\repos\Prj3\IceCream\WebAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\repos\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.csproj.CopyComplete
+C:\repos\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.dll
+C:\repos\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.pdb
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\WebAdmin.dll.config
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\WebAdmin.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\WebAdmin.pdb
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\csc.exe
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\csc.exe.config
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\csc.rsp
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\csi.exe
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\csi.exe.config
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\csi.rsp
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.Managed.Core.targets
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.AppContext.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Collections.Immutable.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Console.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.Compression.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.FileSystem.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.Pipes.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Reflection.Metadata.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.AccessControl.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Claims.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Principal.Windows.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.ValueTuple.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.XmlDocument.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.XPath.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\vbc.exe
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\vbc.exe.config
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\vbc.rsp
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\VBCSCompiler.exe
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\roslyn\VBCSCompiler.exe.config
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.csprojAssemblyReference.cache
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.csproj.CoreCompileInputs.cache
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.csproj.CopyComplete
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.dll
+D:\hoc tap\New folder\Prj3\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.pdb
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\WebAdmin.dll.config
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\WebAdmin.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\WebAdmin.pdb
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\csc.exe
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\csc.exe.config
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\csc.rsp
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\csi.exe
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\csi.exe.config
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\csi.rsp
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.AppContext.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Console.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.Compression.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Claims.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.ValueTuple.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\vbc.exe
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\vbc.exe.config
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\vbc.rsp
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.dll
+C:\Users\Administrator\Desktop\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.pdb
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\WebAdmin.dll.config
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\WebAdmin.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\WebAdmin.pdb
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\csc.exe
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\csc.exe.config
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\csc.rsp
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\csi.exe
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\csi.exe.config
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\csi.rsp
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.Managed.Core.targets
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.AppContext.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Collections.Immutable.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Console.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.Compression.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.FileSystem.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.IO.Pipes.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Reflection.Metadata.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.AccessControl.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Claims.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Security.Principal.Windows.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.ValueTuple.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.XmlDocument.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.XPath.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\vbc.exe
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\vbc.exe.config
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\vbc.rsp
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\VBCSCompiler.exe
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\roslyn\VBCSCompiler.exe.config
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.csprojAssemblyReference.cache
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.csproj.CoreCompileInputs.cache
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.csproj.CopyComplete
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\Prj3\IceCream\WebAdmin\obj\Debug\WebAdmin.pdb
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\WebAdmin.dll.config
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\WebAdmin.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\WebAdmin.pdb
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csc.exe
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csc.exe.config
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csc.rsp
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csi.exe
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csi.exe.config
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csi.rsp
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.Managed.Core.targets
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.AppContext.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Collections.Immutable.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Console.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.Compression.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.FileSystem.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.Pipes.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Reflection.Metadata.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.AccessControl.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Claims.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Principal.Windows.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.ValueTuple.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Xml.XmlDocument.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Xml.XPath.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\vbc.exe
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\vbc.exe.config
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\vbc.rsp
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\VBCSCompiler.exe
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\VBCSCompiler.exe.config
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.csprojAssemblyReference.cache
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.csproj.CoreCompileInputs.cache
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.csproj.CopyComplete
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.dll
+C:\repos\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.pdb
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\WebAdmin.dll.config
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\WebAdmin.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\WebAdmin.pdb
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csc.exe
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csc.exe.config
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csc.rsp
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csi.exe
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csi.exe.config
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csi.rsp
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.Managed.Core.targets
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.AppContext.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Collections.Immutable.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Console.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.Compression.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.FileSystem.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.Pipes.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Reflection.Metadata.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.AccessControl.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Claims.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Principal.Windows.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.ValueTuple.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Xml.XmlDocument.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Xml.XPath.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\vbc.exe
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\vbc.exe.config
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\vbc.rsp
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\VBCSCompiler.exe
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\VBCSCompiler.exe.config
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.csprojAssemblyReference.cache
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.csproj.CoreCompileInputs.cache
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.csproj.CopyComplete
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.dll
+D:\hoc tap\New folder\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.pdb
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\WebAdmin.dll.config
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\WebAdmin.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\WebAdmin.pdb
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csc.exe
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csc.exe.config
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csc.rsp
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csi.exe
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csi.exe.config
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\csi.rsp
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.Managed.Core.targets
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.AppContext.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Collections.Immutable.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Console.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.Compression.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.FileSystem.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.IO.Pipes.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Reflection.Metadata.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.AccessControl.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Claims.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Security.Principal.Windows.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.ValueTuple.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Xml.XmlDocument.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Xml.XPath.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\vbc.exe
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\vbc.exe.config
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\vbc.rsp
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\VBCSCompiler.exe
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\roslyn\VBCSCompiler.exe.config
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.csprojAssemblyReference.cache
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.csproj.CoreCompileInputs.cache
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.csproj.CopyComplete
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.dll
+C:\repos\.NET Framework\Group5_IceCreamShopSystem\Source Code\WebAdmin\obj\Debug\WebAdmin.pdb

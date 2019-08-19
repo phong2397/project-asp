@@ -1,0 +1,27 @@
+body {
+    background: url('../Images/background_admin_index.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: darkgray;
+}
+.hh2 {
+    text-align: center;
+    margin: 3%;
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    color: aqua;
+}
+.pp {
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+ button {
+
+ }
+
+

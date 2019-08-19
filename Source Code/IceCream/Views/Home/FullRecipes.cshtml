@@ -1,0 +1,35 @@
+﻿@model IEnumerable<IceCream.Models.Recipe>
+
+@{
+
+    ViewBag.Title = "Full Recipes";
+}
+
+<h2 class="hh2" >Full Ice-Cream Recipes</h2>
+
+
+
+@foreach (var item in Model)
+{
+    if (item.Status == "VIP")
+    {
+
+        <div class="container">
+
+            <div class="frameItem">
+                <a href="@Url.Action("RecipeDetails", "Home", new { id = item.Id })"><img src="@Html.DisplayFor(modelItem => item.Imag)" class="itemBanner" style="display: inline-block;"></a>
+                <div style="display: inline-block;" class="contentItem">
+                    <a href="@Url.Action("RecipeDetails", "Home", new { id = item.Id })" style="text-decoration: none;"><h5 class="hh5">@Html.DisplayFor(modelItem => item.Title)</h5></a>
+                    <p>@Html.DisplayFor(modelItem => item.Content)</p>
+                    <a href="@Url.Action("RecipeDetails", "Home", new { id = item.Id })" style="text-decoration: none;">Read More...</a>
+                </div>
+            </div>
+
+            <br /><br /><br />
+        </div>
+    }
+
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/stylefull.css">
+

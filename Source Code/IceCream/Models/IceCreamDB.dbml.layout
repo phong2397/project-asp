@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="IceCreamDB">
+  <DataContextMoniker Name="/IceCreamDBData" />
+  <nestedChildShapes>
+    <classShape Id="15f28714-2390-403d-984e-f85181d8d01a" absoluteBounds="2, 1.25, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/IceCreamDBData/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="64087dc2-2b51-469e-948d-b971f079d3f5" absoluteBounds="2.015, 1.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

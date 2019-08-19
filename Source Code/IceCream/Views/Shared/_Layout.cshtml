@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="~/images/fav.ico">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:400,500,700" rel="stylesheet">
+    <!-- FONT-AWESOME ICON CSS -->
+    @*<link rel="stylesheet" href="~/Content/font-awesome.min.css">*@
+    <!--== ALL CSS FILES ==-->
+    <link rel="stylesheet" href="~/Content/style.css">
+
+
+
+
+
+
+    <link rel="stylesheet" href="~/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="~/css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="~/css/flexslider.css">
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="~/fonts/flaticon/font/flaticon.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Modernizr JS -->
+    <script src="~/js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--From template 2-->
+    <link href="~/css/style6.css" rel="stylesheet" />
+    <link href="~/css/bootstrap2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/css/open2-iconic-bootstrap.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap8.min.css">
+    <link href="~/css/font8-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="~/css/cart8_responsive.css">
+    <link rel="stylesheet" type="text/css" href="~/css/cart8.css">
+
+
+
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/fonts7/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/fonts7/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+
+
+</head>
+<body>
+    <section>
+        <!-- TOP BAR -->
+        <div class="ed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ed-com-t1-left">
+                            <ul>
+                                <li>
+                                    <a href="#">Phone: +101-1231-1231</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ed-com-t1-right">
+                            <ul>
+                                @if (Session["email"] != null)
+                                {
+                                    <li>
+                                        <a href="@Url.Action("Profiles","Home")" >Hello, @Session["email"].ToString()</a>
+                                    </li>
+                                   
+                                    <li>
+                                        <a href="@Url.Action("Logout","Home")" data-toggle="tooltip" data-placement="left" title="Click here to view your profile and check your flight status">Logout</a>
+                                    </li>
+                                   
+                                }
+                                else
+                                {
+                                    <li>
+                                        <a href="@Url.Action("Login","Home")" data-toggle="tooltip" data-placement="left" title="Click here to sign in your account">Sign In</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("Register","Home")" data-toggle="tooltip" data-placement="left" title="Click here to create a new account">Register</a>
+                                    </li>
+                                    
+                                }
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LOGO AND MENU SECTION -->
+        <div class="top-logo" data-spy="affix" data-offset-top="250">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-1 wed-logo">
+                        <a href='@Url.Action("Index","Home")'>  <img src="~/Images/OCM.jpg" style="width:auto; height:auto;margin-bottom:-9px;"></a>
+
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="main-menu col-lg-8">
+
+                        <ul>
+                            <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                            <!--<li><a class='dropdown-button ed-sub-menu' href='#' data-activates='dropdown1'>Courses</a></li>-->
+                            <li>
+                                <a href="@Url.Action("Book","Product")">Book Dessert</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("FreeRecipes","Home")">Free Recipes</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Contact","Contact")">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("FAQ","FAQ")">FAQ</a>
+                            </li>
+                            @if (Session["email"] != null)
+                            {
+                                <li> <a href="@Url.Action("Orderhistory","Shoppingcart")">Order History</a></li>
+                            }
+
+                                <li>
+                                    <a href="~/ShoppingCart/Index"><img src="~/images/Cart3.jpg" height="62" width="55" /></a>
+                                    </li>
+</ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container body-content" style="margin-left:10%;">
+        @RenderBody()
+        <hr />
+    </div>
+    <footer class="footer-area bg-img" style=" background-image: url('../../images/35.jpg');">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="footer-logo mb-30">
+                                <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                            </div>
+                            <p>Cook Your Own Way</p>
+                            <div class="social-info">
+                                <a href="https://www.facebook.com/aptech.fpt/?ref=br_rs" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://vn.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h5>My Team</h5>
+                            </div>
+
+                            <!-- Single Best Seller Products -->
+                            <div class="single-best-seller-product d-flex align-items-center">
+                                <div class="product-info">
+                                    <a href="#">Bui Van Huong</a>
+                                </div>
+                            </div>
+                            <!-- Single Best Seller Products -->
+                            <div class="single-best-seller-product d-flex align-items-center">
+                                <div class="product-info">
+                                    <a href="#">Chau Thanh Phong</a>
+                                </div>
+                            </div>
+
+                            <!-- Single Best Seller Products -->
+                            <div class="single-best-seller-product d-flex align-items-center">
+                                <div class="product-info">
+                                    <a href="#">DANG NGUYEN DAN LINH</a>
+                                </div>
+                            </div>
+                            <!-- Single Best Seller Products -->
+                            <div class="single-best-seller-product d-flex align-items-center">
+                                <div class="product-info">
+                                    <a href="#">LY TIEN DAT	</a>
+                                </div>
+                            </div>
+                            <!-- Single Best Seller Products -->
+                            <div class="single-best-seller-product d-flex align-items-center">
+                                <div class="product-info">
+                                    <a href="#">MAI HOANG MINH TIEN</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h5>CONTACT</h5>
+                            </div>
+
+                            <div class="contact-information">
+                                <p><span>Address:</span> 590-CMT8, District 3, HCMC</p>
+                                <p><span>Phone:</span> (+8428) 3 846 0846</p>
+                                <p><span>Email:</span><a href="mailto:aptech.hcm@fpt.com.vn" class="" style="color: #fb9f45; font-size:medium"> aptech.hcm@fpt.com.vn</a></p>
+                                <p><span>Open hours:</span> Mon - Sat: 8am to 9pm</p>
+                                <p><span>Happy hours:</span> Sat: 2pm to 4pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Area -->
+
+    </footer>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

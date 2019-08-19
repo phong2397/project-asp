@@ -1,0 +1,19 @@
+body {
+    background: url("../Images/backgrounddetails.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.hh2 {
+    text-align: center;
+    margin: 5%;
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    color: white;
+}
+
+
+
+
+

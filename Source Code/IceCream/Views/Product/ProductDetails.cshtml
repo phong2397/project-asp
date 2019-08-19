@@ -1,0 +1,38 @@
+﻿
+@model IceCream.Models.Product
+
+@{
+    ViewBag.Title = "ProductDetails";
+    
+
+}
+<div class="container-contact100">
+    <div class="pro-de">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="@Html.DisplayFor(model => model.Image)" alt="" />
+            </div>
+            <div class="col-lg-8">
+                <div class="testi_text">
+                    <h4>@Html.DisplayFor(model => model.Name)</h4>
+                    <h5>$@Html.DisplayFor(model => model.Price)</h5>
+                    <p>@Html.DisplayFor(model => model.Description) </p>
+                </div>
+            </div>
+            <br />
+            <br />
+            <form>
+                <h3 class="contact100-form-btn">
+                    <a href="@Url.Action("OrderNow","ShoppingCart",new { id=@Session["IdDetail"]},null)">
+
+                        Add to cart
+                        <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                    </a>
+                </h3>
+            </form>
+        </div>
+    </div>
+    <span class="contact100-more">
+        For any question contact our 24/7 call center: <span class="contact100-more-highlight">+001 123 6889</span>
+    </span>
+</div>

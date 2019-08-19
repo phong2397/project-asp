@@ -1,0 +1,31 @@
+﻿
+
+@model IceCream.Models.Customer
+
+<div class="delivery_options">
+    <label class="delivery_option clearfix">
+        Mr/Ms
+        <input>
+        <span class="checkmark"></span>
+        <span class="delivery_price">@Html.DisplayFor(model => model.CustomerName)</span>
+    </label>
+    <label class="delivery_option clearfix">
+        Email
+        <input>
+        <span class="checkmark"></span>
+        <span class="delivery_price">@Html.DisplayFor(model => model.CustomerEmail)</span>
+    </label>
+    <label class="delivery_option clearfix">
+        Phone number
+        <input>
+        <span class="checkmark"></span>
+        <span class="delivery_price">@Html.DisplayFor(model => model.CustomerPhone)</span>
+    </label>
+    <label class="delivery_option clearfix">
+        Address
+        <input>
+        <span class="checkmark"></span>
+        <span class="delivery_price">@Html.DisplayFor(model => model.CustomerAddress)</span>
+    </label>
+</div>
+

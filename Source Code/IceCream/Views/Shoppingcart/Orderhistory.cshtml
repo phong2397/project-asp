@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Orderhistory";
+
+}
+@using IceCream.Models
+@model IEnumerable<IceCream.Models.Order>
+<div class="super_container">
+    <div class="cart_info">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Column Titles -->
+                    <div class="cart_info_columns clearfix">
+                        <div class="cart_info_col cart_info_col_price">Order NO</div>
+                        <div class="cart_info_col cart_info_col_price">Customer Name</div>
+                        <div class="cart_info_col cart_info_col_price" style="margin-left:100px">Order Date</div>
+                        <div class="cart_info_col cart_info_col_total">Address Delivery</div>
+                        <div class="cart_info_col cart_info_col_total">Total</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cart_items_row">
+                <div class="col">
+
+                    <!-- Cart Item -->
+                    @foreach (var item in Model)
+                    {
+                    <div class="cart_item d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+                        <!-- Name -->
+                        <div class="cart_item_price">
+                            <div class="cart_item_product">@item.InvoiceId</div>
+                        </div>
+                        <div class="cart_item_price">@item.CustomerName</div>
+                        <div class="cart_item_total">
+                            <div class="cart_item_total" style="margin-left:100px">@item.OrderDate</div>
+                        </div>
+
+                        <!-- Price -->
+                        <div class="cart_item_total">
+                            <div class="cart_item_total" style="margin-left:140px">@item.CustomerAddress</div>
+                        </div>
+                        <!-- Quantity -->
+                        <div class="cart_item_total">
+                            <div class="cart_item_total" style="margin-left:170px">$@item.Total</div>
+                        </div>
+                        <div class="cart_item_total" style="margin-left:140px">
+                            <div class="button checkout_button"><a href="@Url.Action("OrderDetails","Shoppingcart",new { id = item.InvoiceId},null)">Detail</a></div>
+                        </div>
+                    </div>
+                       
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="block-27">
+                <ul>
+                    <li><a href="#">&lt;</a></li>
+                    <li class="active"><a href="~/Shoppingcart/Orderhistory?page=1">1</a></li>
+                    <li class="active"><a href="~/Shoppingcart/Orderhistory?page=2">2</a></li>
+                    <li class="active"><a href="~/Shoppingcart/Orderhistory?page=3">3</a></li>
+
+                    <li><a href="#">&gt;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

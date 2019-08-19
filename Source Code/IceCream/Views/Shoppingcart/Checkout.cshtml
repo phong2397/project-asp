@@ -1,0 +1,51 @@
+﻿@model IceCream.Models.Order
+
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/MainLayout/MainLayout1.cshtml";
+}
+
+
+@using (Html.BeginForm("Index", "Shoppingcart", FormMethod.Post))
+{
+
+<div class="form-horizontal">
+
+
+    <h2 style=" color:red">  @Html.ValidationSummary(true)</h2>
+    <div class="form-group">
+        <span class="label-input100" style="font-weight:bolder;color:black">Customer Name</span>
+        @Html.ValidationMessageFor(model => model.CustomerName, "", new { @class = "text-danger" })
+        @Html.EditorFor(model => model.CustomerName, new { htmlAttributes = new { @class = "input100", placeholder = "Enter Name" } })
+    </div>
+
+
+    <div class="form-group">
+        <span class="label-input100" style="font-weight:bolder;color:black">Address Delivery </span>
+        @Html.ValidationMessageFor(model => model.CustomerAddress, "", new { @class = "text-danger" })
+        @Html.EditorFor(model => model.CustomerAddress, new { htmlAttributes = new { @class = "input100", placeholder = "Enter Address Delivery" } })
+    </div>
+
+
+
+    <div class="form-group" @*data-validate="Payment is required"*@>
+        <span class="label-input100" style="font-weight:bolder;color:black">Payment Option </span>
+        <div class="col-md-10">
+            <select name="payment">
+
+                <option value="credit-card">Credit Card</option>
+                <option value="visa">Visa</option>
+                <option value="debit-card">Debit card</option>
+            </select>
+            @Html.ValidationMessageFor(model => model.Payment, "", new { @class = "text-danger" })
+
+            <span class="focus-input100"></span>
+        </div>
+
+    </div>
+  
+
+</div>
+
+
+}

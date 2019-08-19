@@ -1,0 +1,55 @@
+body {
+    background: url('../Images/') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hh2 {
+    text-align: center;
+    margin: 5%;
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    color: deeppink
+}
+
+.hh5 {      font-size: 40px;
+    color: coral;
+    font-family: 'Satisfy', cursive;
+}
+
+.itemBanner {
+    border-radius: 10%;
+    overflow: auto;
+    resize: both;
+    width: 220px;
+    height: 220px;
+    margin: 2%;
+    background: white;
+    box-shadow: 5px 5px 5px #666;
+    -moz-box-shadow: 5px 5px 5px #666;
+    -webkit-box-shadow: 5px 5px 5px #666;
+    margin-right: 5px;
+    padding: 20px;
+}
+
+
+.frameItem {
+    min-width: 300px;
+    max-width: 1000px;
+    background: azure;
+    border-radius: 30px;
+    padding: 10px;
+    background: white;
+    box-shadow: 5px 5px 5px #666;
+    -moz-box-shadow: 5px 5px 5px #666;
+    -webkit-box-shadow: 5px 5px 5px #666;
+    margin-right: 5px;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+.contentItem {
+    padding: 10px;
+}

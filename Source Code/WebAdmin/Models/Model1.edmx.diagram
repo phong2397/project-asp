@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e4b3770dd4044fd9a3055dd1b229fb3e" Name="Diagram1" ZoomLevel="62">
+        <EntityTypeShape EntityType="PrjiceCreamModel.Admin" Width="1.5" PointX="4.875" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrjiceCreamModel.Category" Width="1.5" PointX="4.875" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrjiceCreamModel.Customer" Width="1.5" PointX="1.375" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrjiceCreamModel.FeedBack" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrjiceCreamModel.InvoiceDetailBook" Width="1.5" PointX="4.625" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrjiceCreamModel.Order" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrjiceCreamModel.Product" Width="1.5" PointX="6.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrjiceCreamModel.Recipes" Width="1.5" PointX="6.75" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="PrjiceCreamModel.FK__Product__CateId__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="PrjiceCreamModel.FK_FeedBack_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="PrjiceCreamModel.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="PrjiceCreamModel.FK_InvoiceDetailBook_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="PrjiceCreamModel.FK_InvoiceDetailBook_Product" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="PrjiceCreamModel.Manufacture" Width="1.5" PointX="16.625" PointY="4.125" />
+        <AssociationConnector Association="PrjiceCreamModel.FK__Product__ManuId__31EC6D26" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

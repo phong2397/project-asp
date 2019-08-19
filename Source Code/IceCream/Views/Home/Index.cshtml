@@ -1,0 +1,575 @@
+﻿@model IceCream.Models.Product
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+    <style type="text/css">
+        .gm-style .gm-style-mtc label, .gm-style .gm-style-mtc div {
+            font-weight: 400
+        }
+    </style>
+    <style type="text/css">
+        .gm-control-active > img {
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%)
+        }
+
+            .gm-control-active > img:nth-child(1) {
+                display: block
+            }
+
+        .gm-control-active:hover > img:nth-child(1), .gm-control-active:active > img:nth-child(1) {
+            display: none
+        }
+
+        .gm-control-active:hover > img:nth-child(2), .gm-control-active:active > img:nth-child(3) {
+            display: block
+        }
+    </style>
+
+    <style type="text/css">
+        .gm-ui-hover-effect {
+            opacity: .6
+        }
+
+            .gm-ui-hover-effect:hover {
+                opacity: 1
+            }
+    </style>
+    <style type="text/css">
+        .gm-style .gm-style-cc span, .gm-style .gm-style-cc a, .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            box-sizing: border-box
+        }
+    </style>
+
+    <style type="text/css">
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0,0,0,0.45);
+            text-align: center
+        }
+
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto,Arial,sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+    </style>
+
+
+
+    <meta content="Divi v.3.26.3" name="generator">
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+
+
+
+    <link rel="stylesheet" id="divi-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,latin-ext" type="text/css" media="all">
+    <link rel="stylesheet" id="divi-style-css" href="https://www.elegantthemes.com/preview/Divi/wp-content/themes/Divi/style.css?ver=3.26.3" type="text/css" media="all">
+    <link rel="stylesheet" id="dashicons-css" href="https://www.elegantthemes.com/preview/Divi/wp-includes/css/dashicons.min.css?ver=0c153314b0bff091fc4882f7f3ba2a98" type="text/css" media="all">
+    <script type="text/javascript" src="https://www.elegantthemes.com/preview/Divi/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+    <script type="text/javascript" src="https://www.elegantthemes.com/preview/Divi/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+    <link rel="https://api.w.org/" href="https://www.elegantthemes.com/preview/Divi/wp-json/">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.elegantthemes.com/preview/Divi/xmlrpc.php?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="#">
+    <link rel="canonical" href="#">
+    <link rel="shortlink" href="#">
+    <link rel="alternate" type="application/json+oembed" href="#">
+    <link rel="alternate" type="text/xml+oembed" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <noscript>
+        <style>
+            .woocommerce-product-gallery {
+                opacity: 1 !important;
+            }
+        </style>
+    </noscript>
+    <style type="text/css" id="custom-background-css">
+        body.custom-background {
+            background-color: #ffffff;
+        }
+    </style>
+
+    <style>
+        [data-columns]::before {
+            visibility: hidden;
+            position: absolute;
+            font-size: 1px;
+        }
+    </style>
+    <style id="fit-vids-style">
+        .fluid-width-video-wrapper {
+            width: 100%;
+            position: relative;
+            padding: 0;
+        }
+
+            .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+    </style>
+
+    <style type="text/css">
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+
+            .gm-style img {
+                max-width: none;
+            }
+    </style>
+    <style>
+        body {
+            background-color: darkblue;
+        }
+    </style>
+
+</head>
+
+<body class="page-template-default page page-id-2336 custom-background woocommerce-js et_pb_button_helper_class et_fixed_nav et_show_nav et_cover_background et_secondary_nav_enabled et_secondary_nav_two_panels et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_pb_pagebuilder_layout et_smooth_scroll et_right_sidebar et_divi_theme et-db et_minified_js et_minified_css chrome">
+
+    @using (Html.BeginForm())
+
+    {
+        @Html.AntiForgeryToken()
+
+
+
+        <div class="form-horizontal">
+
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <br />
+            <br />
+            <div id="et-main-area">
+                <div id="main-content" style="background-color:bisque;-moz-border-radius: 100px;
+-webkit-border-radius: 100px;">
+                    <article id="post-2336" class="post-2336 page type-page status-publish hentry">
+                        <div class="entry-content">
+                            <div id="et-boc" class="et-boc">
+                                <div>
+                                    <div>
+                                     <div class="et_pb_row et_pb_row_0">
+                                            <div class="et_pb_column et_pb_column_2_3 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
+
+                                                <div id="et_pb_contact_form_0" class="et_pb_module et_pb_contact_form_0 et_pb_contact_form_container clearfix" data-form_unique_num="0">
+
+                                                    <h1 class="et_pb_contact_main_title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;font-weight:bold">ICE CREAM PALOR SHOP </font></font></h1>
+                                                    <div class="et-pb-contact-message"></div>
+                                                    <div class="et_pb_contact">
+
+                                                        <div class="et_pb_module et_pb_team_member et_pb_team_member_0 et_pb_bg_layout_light clearfix ">
+
+                                                            <div class="et_pb_team_member_image et-waypoint et_pb_animation_fade_in et-animated">
+                                                                <img src="../Images/hinh.jpg" alt="huong">
+
+                                                            </div>
+                                                            <div class="et_pb_text_inner">
+                                                                <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;color:black">Best quality website selling Ice Cream And Dessert</font></font></h3>
+                                                                <p>
+                                                                    <font style="vertical-align: inherit;">
+                                                                        Ice cream is a snack that everyone loves, especially young people.
+                                                                        Your shop is selling fresh ice cream to serve people.
+                                                                    </font>
+                                                                    <font style="vertical-align: inherit;">But you can only sell in very small quantities and not very well known.</font>
+                                                                </p>
+                                                                <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">About the site</font></font></h3>
+                                                                <p>
+                                                                    <strong>
+                                                                        <font style="vertical-align: inherit;">
+                                                                            <font style="vertical-align: inherit;">
+                                                                                <ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Website is the shortest path from your store to the user.</font></font></li></ul>
+                                                                            </font>
+                                                                        </font>
+                                                                    </strong>
+
+
+                                                                    <strong>
+                                                                        <font style="vertical-align: inherit;">
+                                                                            <font style="vertical-align: inherit;">
+                                                                                <ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Having a website will easily promote your brand to everyone through google search engine, social network ...</font></font></li></ul>
+                                                                            </font>
+                                                                        </font>
+                                                                    </strong>
+
+
+
+                                                                    <strong>
+                                                                        <font style="vertical-align: inherit;">
+                                                                            <font style="vertical-align: inherit;">
+                                                                                <ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    Your website is integrated with shopping cart features and online purchases that customers can buy right from the website without going to the place.
+</font></font></li></ul>
+                                                                            </font>
+                                                                        </font>
+                                                                    </strong>
+
+
+
+
+                                                                    <strong>
+                                                                        <font style="vertical-align: inherit;">
+                                                                            <font style="vertical-align: inherit;">
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <font style="vertical-align: inherit;">
+                                                                                            <font style="vertical-align: inherit;">
+                                                                                                Website is the place to display ice cream products, arranged with the most logical order.
+                                                                                                For each product, you can detail the price, characteristics and properties of the product for the best user search.
+                                                                                            </font>
+                                                                                        </font>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </font>
+                                                                        </font>
+                                                                    </strong>
+
+
+
+                                                                    
+
+
+
+                                                                   
+
+
+
+
+
+                                                                   
+                                                               
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough">
+                                                <div class="et_pb_module et_pb_text et_pb_text_0 et_pb_bg_layout_light  et_pb_text_align_left">
+                                                    <div class="et_pb_text_inner">
+                                                        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">More Info</font></font></h3>
+                                                        <p>
+                                                            <font style="vertical-align: inherit;">We have more than 7,600 stores across 50 countries.</font>
+                                                            <font style="vertical-align: inherit;">You will be surprised to find us almost all over the world with typical ice cream flavors.</font>
+                                                        </p>
+                                                        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Restaurant Development Milestones in the world</font></font></h3>
+                                                        <p>
+                                                            <strong>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> India</font></font></li></ul>
+                                                                    </font>
+                                                                </font>
+                                                            </strong>
+
+
+                                                            <strong>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Australia</font></font></li></ul>
+                                                                    </font>
+                                                                </font>
+                                                            </strong>
+
+
+
+                                                            <strong>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Korea</font></font></li></ul>
+                                                                    </font>
+                                                                </font>
+                                                            </strong>
+
+
+
+
+                                                            <strong>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <font style="vertical-align: inherit;">
+                                                                                    <font style="vertical-align: inherit;">
+                                                                                        Vietnam
+                                                                                    </font>
+                                                                                </font>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </font>
+                                                                </font>
+                                                            </strong>
+
+
+
+                                                            <strong>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> China</font></font></li></ul>
+                                                                    </font>
+                                                                </font>
+                                                            </strong>
+
+
+
+                                                            <strong>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Japan</font></font></li></ul>
+                                                                    </font>
+                                                                </font>
+                                                            </strong>
+
+
+
+                                                            <strong>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Canada</font></font></li></ul>
+                                                                    </font>
+                                                                </font>
+                                                            </strong>
+
+
+
+                                                            <strong>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> UK</font></font></li></ul>
+                                                                    </font>
+                                                                </font>
+                                                            </strong>
+                                                        </p>
+                                                        <p>
+                                                            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Address:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 590 Cách Mạng Tháng Tám </font></font><br><font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">
+                                                                    WARD 11 County 3 TPHCM
+                                                                </font>
+                                                            </font>
+                                                        </p>
+                                                        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Phone:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 123.4567.890</font></font></p>
+                                                        <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Business Hours:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 8AM - 22PM</font></font></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+
+       
+
+
+
+
+        <br />
+        <div id="et-main-area" @*style="opacity:0.8;"*@>
+            <div id="main-content" style="background-color:bisque;-moz-border-radius: 100px;
+-webkit-border-radius: 100px;">
+                <article id="post-2336" class="post-2336 page type-page status-publish hentry">
+                    <div class="entry-content">
+                        <div id="et-boc" class="et-boc">
+                            <div class="et_builder_inner_content et_pb_gutters3">
+                                <div>
+
+                                    <div class="et_pb_contact_main_title">
+                                        <br />
+                                        <h1 class="et_pb_contact_main_title" style="text-align:center; font-size:3.5em"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Member Creator</font></font></h1>
+                                    </div>
+                                    <div class="et_pb_row et_pb_row_3">
+                                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough">
+
+                                            <div class="et_pb_module et_pb_team_member et_pb_team_member_0 et_pb_bg_layout_light clearfix ">
+
+
+                                                <div class="et_pb_team_member_description">
+                                                    <img src="~/Images/h.jpg" alt="" width="200" height="200">
+                                                    <h4 class="et_pb_module_header">Bùi Văn Hương</h4>
+                                                    <p class="et_pb_member_position">Team Leader</p>
+                                                    Responsible, high team spirit to lead the good team.
+                                                    <p>
+                                                        <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Email:</font></font></strong><font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">
+                                                                bvh1610@yahoo.com
+                                                            </font>
+                                                        </font>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough">
+                                            <div class="et_pb_module et_pb_team_member et_pb_team_member_1 et_pb_bg_layout_light clearfix ">
+
+                                                <div class="et_pb_team_member_description">
+                                                    <img src="~/Images/d.jpg" alt="" width="200" height="200">
+                                                    <h4 class="et_pb_module_header">Lý Tiến Đạt</h4>
+                                                    <p class="et_pb_member_position">Young Programmer</p>
+                                                    Is a long-time programmer who has a lot of experience, helps the members, fulfills the assigned tasks.
+                                                    <p>
+                                                        <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Email:</font></font></strong><font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">
+                                                                datlytien1995@gmail.com
+
+                                                            </font>
+                                                        </font>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough">
+                                                   <div class="et_pb_module et_pb_team_member et_pb_team_member_2 et_pb_bg_layout_light clearfix ">
+
+                                                       <div class="et_pb_team_member_description">
+                                                           <img src="~/Images/P.jpg" alt="" width="200" height="100">
+                                                           <h4 class="et_pb_module_header">Châu Thanh Phong</h4>
+                                                           <p class="et_pb_member_position">Young Programmer</p>
+                                                           Enthusiastic, rich experience, many bold thoughts.
+                                                           <p>
+                                                               <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Email:</font></font></strong><font style="vertical-align: inherit;">
+                                                                   <font style="vertical-align: inherit;">
+                                                                       thanhphong2497@gmail.com
+
+
+                                                                   </font>
+                                                               </font>
+                                                           </p>
+                                                       </div>
+                                                   </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+
+
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+
+        <br />
+
+
+        <div id="et-main-area" @*style="opacity:0.8;"*@>
+            <div id="main-content" style="background-color:bisque;
+-moz-border-radius: 100px;
+-webkit-border-radius: 100px;">
+                <article id="post-2336" class="post-2336 page type-page status-publish hentry">
+                    <div class="entry-content">
+                        <div id="et-boc" class="et-boc">
+                            <div class="et_builder_inner_content et_pb_gutters3">
+                                <div>
+
+                                    <div class="et_pb_row et_pb_row_3">
+                                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough">
+                                            <div class="et_pb_module et_pb_team_member et_pb_team_member_0 et_pb_bg_layout_light clearfix ">
+                                               
+                                                <div class="et_pb_team_member_description">
+                                                    <img src="~/Images/t.jpg" alt="" width="200" height="200">
+                                                    <h4 class="et_pb_module_header">Mai Hoàng Minh Tiến</h4>
+                                                    <p class="et_pb_member_position">Young Programmer</p>
+                                                    Enthusiastic, rich experience, many bold thoughts.
+                                                    <p>
+                                                        <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Email:</font></font></strong><font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">
+                                                                kenzytien35@gmail.com
+
+
+
+                                                            </font>
+                                                        </font>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div> <div class="et_pb_column et_pb_column_1_3 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough">
+                                            <div class="et_pb_module et_pb_team_member et_pb_team_member_1 et_pb_bg_layout_light clearfix ">
+                                                
+                                                <div class="et_pb_team_member_description">
+                                                    <img src="~/Images/L.jpg" alt="" width="200" height="200">
+                                                    <h4 class="et_pb_module_header">Đặng Nguyễn Đan Linh</h4>
+                                                    <p class="et_pb_member_position">Young Programmer</p>
+                                                    Enthusiastic, rich experience, many bold thoughts.
+                                                    dangnguyendanlinh.95.dd@gmail.com
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough">
+                                            <div class="et_pb_module et_pb_team_member et_pb_team_member_1 et_pb_bg_layout_light clearfix ">
+                                                
+                                                <div class="et_pb_team_member_description">
+                                                    <h4 class="et_pb_module_header">Team</h4>
+                                                    <p class="et_pb_member_position">Start Hope</p>
+                                                    Strong, sociable, cooperative together for the future.
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+
+    }
+
+
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+</body>

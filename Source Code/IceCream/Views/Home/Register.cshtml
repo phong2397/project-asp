@@ -1,0 +1,125 @@
+﻿@model IceCream.Models.CustomerMeta
+
+@{
+    ViewBag.Title = "Register";
+   
+
+    <script src="~/Scripts/check-regis.js"></script>
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal" style="border:groove;border-color:aqua;margin-left:150px;margin-right:100px;padding:20px;margin-top:80px;">
+        <h2 style="text-align:center;padding-bottom:20px;font-family:HP-Ashley;font-size:40px;" >Create Account</h2>
+        <div style="margin-left:75px;padding-left:10px;padding-right:50px;">
+            <div class="form-group">
+                <span class="label-input100" >Customer Email</span>
+                @Html.EditorFor(model => model.CustomerEmail, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ex: kenzytien35@gmail.com" } })
+                <div class="col-md-9">
+
+                    @Html.ValidationMessageFor(model => model.CustomerEmail, "", new { @class = "text-danger" })
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span class="label-input100">Password</span>
+                @Html.EditorFor(model => model.CustomerPassword, new { htmlAttributes = new { @class = "form-control" } })
+
+                <div class="col-md-9">
+
+                    @Html.ValidationMessageFor(model => model.CustomerPassword, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span class="label-input100">Name</span>
+                @Html.EditorFor(model => model.CustomerName, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ex: Mai Hoang Minh Tien" } })
+                <div class="col-md-9">
+
+                    @Html.ValidationMessageFor(model => model.CustomerName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span class="label-input100">Phone</span>
+                @Html.EditorFor(model => model.CustomerPhone, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ex: 0347669551" } })
+                <div class="col-md-9">
+
+                    @Html.ValidationMessageFor(model => model.CustomerPhone, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <span class="label-input100">Address</span>
+                @Html.EditorFor(model => model.CustomerAddress, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ex: cmt8 tp.hcm" } })
+                <div class="col-md-9">
+
+                    @Html.ValidationMessageFor(model => model.CustomerAddress, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                
+                <div class="col-md-12">
+                    <span class="label-input100"><input type="checkbox" name="checkregis" value="checked" id="checkregis" onclick="checkbox();" />Check this box if you want to register to become a member to see more flavor recipes!!</span>     
+                </div>
+            </div>
+        </div>
+
+
+        <div id="mem-reg" style="display:none;">
+            <div class="mem-reg" id="mem-reg" style="border-top:groove;border-color:aqua; margin-top:20px;padding-top:20px;padding-right:50px">
+                <h2 style="text-align:center;padding-bottom:20px;font-family:HP-Ashley;font-size:40px">Register Member</h2>
+                <div style="margin-left:75px;padding-left:10px;">
+                    <div class="form-group">
+                        <div class="control-label col-md-3"> <span class="label-input100">Using Card</span></div>
+                        <div class="col-md-3">
+                            <img src="~/ImageLogo/Credit-card.jpg" style="width:35px;height:25px;" />
+                            <img src="~/ImageLogo/master-card.jpg" style="width:35px;height:25px;" />
+                            <img src="~/ImageLogo/visa-icon.png" style="width:35px;height:25px;" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="control-label col-md-3"> <span class="label-input100">Duration:</span></div>
+                        <div class="col-md-9" style="margin-top:5px;">
+                            <input type="radio" id="checkduration" checked="" name="duration" value="month" /><span class="label-input100">15$/Month</span>
+    <input type="radio" id="checkduration" name="duration" value="year" /><span class="label-input100">150$/Year</span>
+</div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-3"> <span class="label-input100">Card Number:</span></div>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="cardnum" name="cardnumber" disabled="" required="" pattern="[0-9]{12}" placeholder="Ex: 1234 4568 4571 1246" title="card number includes 12 digits" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="control-label col-md-3"> <span class="label-input100">Name Printed On The Card:</span></div>         
+                        <div class="col-md-9" style="margin-top:7px;">
+                            <input type="text" class="form-control" id="nameoncard" name="namecard" disabled="" required="" placeholder="Ex: Mai Hoang Minh Tien" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="control-label col-md-3"><span class="label-input100">Security Code:</span></div>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="sccode" name="secutitycode" disabled=""  required="" placeholder="Ex: 123"
+                                   pattern="[0-9]{3}" title="security code includes 3 digits" /><img src="~/ImageLogo/master-ex-code.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-left:200px;padding-left:30px;">
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-9">
+                    <input type="submit" value="Create" style="background-color:cornflowerblue;" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+

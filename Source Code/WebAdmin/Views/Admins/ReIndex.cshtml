@@ -1,0 +1,58 @@
+﻿@model IEnumerable<WebAdmin.Models.Recipes>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Recipes List</h2>
+<p>
+    @Html.ActionLink("Add New Recipes", "RecipeCreate")
+</p>
+<div>
+    @using (Html.BeginForm("ReIndex", "Admins", FormMethod.Get))
+    {
+
+        <label>Search by name:</label>
+        <input type="text" name="pName" placeholder="Enter any character" />
+        <input type="submit" value="Search" class="btn btn-warning" />
+
+    }
+</div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkYT)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkYT)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "RecipeEdit", new { id = item.Id }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Details", "RecipeDetails", new { id = item.Id }, new { @class = "btn btn-success" })
+            @Html.ActionLink("Delete", "RecipeDelete", new { id = item.Id },
+                            new { onclick = "return confirm('Are you sure you want to delete this Recipe?')", @class = "btn btn-danger" })
+        </td>
+    </tr>
+    }
+
+</table>

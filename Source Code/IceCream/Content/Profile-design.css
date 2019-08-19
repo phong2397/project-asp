@@ -1,0 +1,64 @@
+﻿#title-profile {
+    border-bottom:groove;
+    border-color:aqua;
+    padding:0px;
+    margin-top:50px;
+    margin-left:-50px;
+}
+
+#title-profile div {
+        background-color: aqua;
+        height: 40px;
+        clip-path: polygon(0 0, 80% 0%, 100% 100%, 0 100%);
+        width: 200px;
+        margin-left:0px;
+}
+#title-profile div h2{
+    padding:5px;
+    
+}
+#menu-profile-style{
+    display:flex;
+}
+    #menu-profile-style #menu-profile {
+        margin-left:-70px;
+            width:200px;
+    }
+#menu-profile-style #menu-profile ul {
+        border: groove;
+        border-color: aqua;
+        width:100%;
+        margin-left:20px;
+}
+    #menu-profile-style #menu-profile ul li {
+        list-style-type: none;
+        padding: 10px;
+        margin-left: 0px;
+        
+        background-color: white;
+        transition: background-color border-bottom .35s ease-in-out;
+    }
+#menu-profile-style #menu-profile ul li:hover {
+        background-color: aqua;
+        border-bottom: groove aqua;
+}
+#menu-profile-style #menu-profile ul li a{
+    text-decoration:none;
+    font-size:18px;
+}
+    #menu-profile-style #form-profile {
+        background-image: url(../ImageLogo/blank-paper.jpg);
+        background-repeat: no-repeat;
+        background-size: 700px 650px;
+        margin-left: 180px;
+        margin-top: 0px;
+        width: 700px;
+        height: 650px;
+       
+    }
+    #menu-profile-style #form-profile #fix-form-profile {
+        margin-top:50px;
+        margin-left:70px;
+        margin-right:50px;
+    }
+    

@@ -1,0 +1,67 @@
+﻿@using IceCream.Models;
+@model IceCream.Models.Order
+@{
+    /**/
+
+    ViewBag.Title = "Order"; }
+
+<div class="super_container">
+
+
+    <!-- Cart Info -->
+
+    <div class="cart_info">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Column Titles -->
+                    <div class="cart_info_columns clearfix">
+                        <div class="cart_info_col cart_info_col_product"><h3 style="font-weight:bolder">Transaction is Completely</h3></div>
+                       
+                    </div>
+                </div>
+            </div>
+           
+            <div class="row row_extra">
+                <div class="container">
+
+                    <div class="col-lg-6 offset-lg-2">
+                        <div class="cart_total">
+                            <div class="section_title">The Detail Order</div>
+                            <div class="section_subtitle">To provide the best to you</div>
+                            <div class="cart_total_container">
+                                <ul>
+                                    <li class="d-flex flex-row align-items-center justify-content-start">
+                                        <div class="cart_total_title">Order Id</div>
+                                        <div class="cart_total_value ml-auto">@Html.DisplayFor(model => model.InvoiceId)</div>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center justify-content-start">
+                                        <div class="cart_total_title">Customer Name</div>
+                                        <div class="cart_total_value ml-auto">@Html.DisplayFor(model => model.CustomerName)</div>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center justify-content-start">
+                                        <div class="cart_total_title">Order date</div>
+                                        <div class="cart_total_value ml-auto">@Html.DisplayFor(model => model.OrderDate)</div>
+                                    </li>
+                                    <li class="d-flex flex-row align-items-center justify-content-start">
+                                        <div class="cart_total_title">Customer Address</div>
+                                        <div class="cart_total_value ml-auto">@Html.DisplayFor(model => model.CustomerAddress)</div>
+                                    </li>
+
+                                    <li class="d-flex flex-row align-items-center justify-content-start">
+                                        <div class="cart_total_title">Total</div>
+                                        <div class="cart_total_value ml-auto">$@Html.DisplayFor(model => model.Total)</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="button checkout_button"><a href="@Url.Action("OrderDetails","Shoppingcart",new { id = @Html.DisplayFor(model => model.InvoiceId)},null)">Detail:</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+</div>

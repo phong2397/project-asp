@@ -1,0 +1,72 @@
+﻿@model IEnumerable<IceCream.Models.Recipe>
+
+@{
+
+    ViewBag.Title = "Free Recipes";
+}
+
+<h2 style=" text-align: center;
+    margin: 5%;
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    color: deeppink">Free Ice-Cream Recipe</h2>
+
+@foreach (var item in Model)
+{
+    if (item.Status == "Free")
+    {
+        <div class="container">
+            <div class="frameItem">
+                <a href="@Url.Action("RecipeDetails", "Home", new { id = item.Id })"><img src="@Html.DisplayFor(modelItem => item.Imag)" class="itemBanner" style="display: inline-block;"></a>
+                <div style="display: inline-block;" class="contentItem">
+                    <a href="@Url.Action("RecipeDetails", "Home", new { id = item.Id })" style="text-decoration: none;"><h5 class="hh5">@Html.DisplayFor(modelItem => item.Title)</h5></a>
+                    <p>@Html.DisplayFor(modelItem => item.Content)</p>
+                    <a href="@Url.Action("RecipeDetails", "Home", new { id = item.Id })" style="text-decoration: none;">Read More...</a>
+                </div>
+            </div>
+
+            <br /><br /><br />
+        </div>
+    }
+}
+
+        <center>
+            @if (Session["email"] == null)
+            {
+                <a href="@Url.Action("FullRecipes", "Home")" onclick="return confirm('Please create account or login to see full recipes')">
+                    <button style="margin: 50px; padding: 10px; padding-left: 150px; padding-right: 150px;
+                        border-radius: 10px; font-family: 'Satisfy', cursive; font-size: 30px; color: white;
+                        background: crimson;">
+                        See More Recipes...
+                    </button>
+                </a>
+            }
+            else
+            {
+                if (int.Parse(Session["role"].ToString()) == 0)
+                {
+                    <a href="@Url.Action("FullRecipes", "Home")" onclick="return confirm('Please register member to see full recipes')">
+                        <button style="margin: 50px; padding: 10px; padding-left: 150px; padding-right: 150px;
+                        border-radius: 10px; font-family: 'Satisfy', cursive; font-size: 30px; color: white;
+                        background: crimson;">
+                            See More Recipes...
+                        </button>
+                    </a>
+                }
+                else
+                {
+                    <a href="@Url.Action("FullRecipes", "Home")">
+                        <button style="margin: 50px; padding: 10px; padding-left: 150px; padding-right: 150px;
+                        border-radius: 10px; font-family: 'Satisfy', cursive; font-size: 30px; color: white;
+                        background: crimson;">
+                            See More Recipes...
+                        </button>
+                    </a>
+                }
+
+            }
+
+        </center>
+
+
+<link rel="stylesheet" type="text/css" href="~/Content/stylefree.css">

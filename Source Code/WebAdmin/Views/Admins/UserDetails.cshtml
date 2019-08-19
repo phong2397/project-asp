@@ -1,0 +1,82 @@
+﻿@model WebAdmin.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details of User</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateRegister)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateRegister)
+
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerRole)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerRole)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerEmail)
+        </dd>
+
+    </dl>
+</div>
+<p>
+   
+    @Html.ActionLink("Back to List", "UserIndex","", new { @class = "btn btn-default" })
+</p>

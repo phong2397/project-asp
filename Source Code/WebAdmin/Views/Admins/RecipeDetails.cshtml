@@ -1,0 +1,62 @@
+﻿@model WebAdmin.Models.Recipes
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details of Recipes</h2>
+
+<div>
+    <dl class="dl-horizontal">
+       
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Content)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Content)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Imag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Imag)
+
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkYT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkYT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+      
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "RecipeEdit", new { id = Model.Id }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Back to List", "ReIndex","",new { @class="btn btn-default"})
+</p>

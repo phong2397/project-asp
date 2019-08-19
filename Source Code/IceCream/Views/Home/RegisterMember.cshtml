@@ -1,0 +1,94 @@
+﻿@model IceCream.Models.CustomerMeta
+
+@{
+
+    ViewBag.Title = "RegisterMember";
+    int sessrole = int.Parse(Session["role"].ToString());
+}
+<link href="~/Content/Profile-design.css" rel="stylesheet" type="text/css" />
+
+
+
+<div id="title-profile">
+    <div id="title-profile-design">
+        <h2 style="text-align:center;margin-left:-25px">Profile</h2>
+    </div>
+</div>
+
+<div id="menu-profile-style">
+    <div id="menu-profile">
+        <ul>
+            <li><a href='@Url.Action("Profiles","Home")'>Information Account</a></li>
+            <li><a href='@Url.Action("ChangePassWord","Home")'>Change Password</a></li>
+            <li style="background-color:aqua;border-bottom:groove aqua;"><a href='@Url.Action("RegisterMember","Home")'>Register Account Customer</a></li>
+            <li style="border-bottom:none;"><a href='@Url.Action("Logout","Home")'>Logout</a></li>
+        </ul>
+    </div>
+    <div id="form-profile">
+
+        <div id="fix-form-profile">
+            <h2 style="text-align:center;margin-left:-80px;font-family:HP-Ashley;padding-bottom:20px">Register Account Customer</h2>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    @if (sessrole != 0)
+                    {
+                        <h2 style="font-family:'UTM Ong Do Gia';font-size:115px;color:lawngreen;">You are already a member!!!</h2>
+                    }
+                    else
+                    {
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.CustomerId)
+
+                        <div class="form-group">
+                            <div class="control-label col-md-3"><span class="label-input100">Using Card</span></div>
+                            <div class="col-md-4">
+                                <img src="~/ImageLogo/Credit-card.jpg" style="width:35px;height:25px;" />
+                                <img src="~/ImageLogo/master-card.jpg" style="width:35px;height:25px;" />
+                                <img src="~/ImageLogo/visa-icon.png" style="width:35px;height:25px;" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="control-label col-md-3"><span class="label-input100">Duration: </span></div>
+                            <div class="col-md-9" style="margin-top:5px;">
+                                <input type="radio" name="duration" checked="" value="month" /><span class="label-input100">15$/month</span>
+    <input type="radio" name="duration" value="year" /><span class="label-input100">150$/year</span>
+</div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="control-label col-md-3"><span class="label-input100">Card Number:</span> </div>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="cardnum" name="cardnumber" required="" pattern="[0-9]{12}" placeholder="Ex: 1234 4568 4571 1246" title="card number includes 12 digits" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="control-label col-md-3"><span class="label-input100">Name printed on the card: </span></div>
+                            <div class="col-md-9" style="margin-top:7px;">
+                                <input type="text" class="form-control" id="nameoncard" name="namecard" required="" placeholder="Ex: Mai Hoang Minh Tien" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="control-label col-md-3"><span class="label-input100">Security code:</span></div>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="sccode" name="secutitycode" required="" placeholder="Ex: 123"
+                                       pattern="[0-9]{3}" title="security code includes 3 digits" /><img src="~/ImageLogo/master-ex-code.png" />
+                            </div>
+                        </div>
+                        <div class="container-contact100-form-btn" style="margin-left:150px;">
+                            <button class="btn btn-primary" style="margin-top:30px" onclick="return confirm('Are you sure you want to Update ?')">
+                                <span>
+                                    Update
+                                    <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </div>
+
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>

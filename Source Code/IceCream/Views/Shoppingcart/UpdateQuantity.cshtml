@@ -1,0 +1,31 @@
+﻿@using IceCream.Models;
+@model List<IceCream.Models.Cart>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm())
+{
+    <table class="table">
+        <tr>
+            <th>
+                Quantity
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in (List<Cart>)Session["cart"])
+        {
+            <tr>
+                <td>
+                    @Html.EditorFor(modelItem => item.Quantity)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+    <div>
+        <input type="submit" value="update" />
+    </div>
+}

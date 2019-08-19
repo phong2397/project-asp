@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PrjiceCreamModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CateId" />
+    </Key>
+    <Property Name="CateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__Product__CateId__47DBAE45" FromRole="Category" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerPhone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DateRegister" Type="DateTime" Precision="3" />
+    <Property Name="CustomerRole" Type="Byte" />
+    <NavigationProperty Name="FeedBack" Relationship="Self.FK_FeedBack_Customer" FromRole="Customer" ToRole="FeedBack" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_Order_Customer" FromRole="Customer" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="FeedBack">
+    <Key>
+      <PropertyRef Name="ContactId" />
+    </Key>
+    <Property Name="ContactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Content" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK_FeedBack_Customer" FromRole="FeedBack" ToRole="Customer" />
+  </EntityType>
+  <EntityType Name="InvoiceDetailBook">
+    <Key>
+      <PropertyRef Name="InvoiceDetailId" />
+    </Key>
+    <Property Name="InvoiceDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="InvoiceId" Type="Int32" Nullable="false" />
+    <Property Name="SubTotal" Type="Double" Nullable="false" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_InvoiceDetailBook_Order" FromRole="InvoiceDetailBook" ToRole="Order" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_InvoiceDetailBook_Product" FromRole="InvoiceDetailBook" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="InvoiceId" />
+    </Key>
+    <Property Name="InvoiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CustomerAddress" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Payment" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OrderStatus" Type="Boolean" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="CustomerId" Type="Int32" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK_Order_Customer" FromRole="Order" ToRole="Customer" />
+    <NavigationProperty Name="InvoiceDetailBook" Relationship="Self.FK_InvoiceDetailBook_Order" FromRole="Order" ToRole="InvoiceDetailBook" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CateId" Type="Int32" Nullable="false" />
+    <Property Name="ManuId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="Self.FK__Product__CateId__47DBAE45" FromRole="Product" ToRole="Category" />
+    <NavigationProperty Name="InvoiceDetailBook" Relationship="Self.FK_InvoiceDetailBook_Product" FromRole="Product" ToRole="InvoiceDetailBook" />
+    <NavigationProperty Name="Manufacture" Relationship="PrjiceCreamModel.FK__Product__ManuId__31EC6D26" FromRole="Product" ToRole="Manufacture" />
+  </EntityType>
+  <EntityType Name="Recipes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Imag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LinkYT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK__Product__CateId__47DBAE45">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CateId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="CateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FeedBack_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="FeedBack" Type="Self.FeedBack" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="FeedBack">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceDetailBook_Order">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="InvoiceDetailBook" Type="Self.InvoiceDetailBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="InvoiceId" />
+      </Principal>
+      <Dependent Role="InvoiceDetailBook">
+        <PropertyRef Name="InvoiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceDetailBook_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="InvoiceDetailBook" Type="Self.InvoiceDetailBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="InvoiceDetailBook">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PrjiceCreamEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admin" EntityType="Self.Admin" />
+    <EntitySet Name="Category" EntityType="Self.Category" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" />
+    <EntitySet Name="FeedBack" EntityType="Self.FeedBack" />
+    <EntitySet Name="InvoiceDetailBook" EntityType="Self.InvoiceDetailBook" />
+    <EntitySet Name="Order" EntityType="Self.Order" />
+    <EntitySet Name="Product" EntityType="Self.Product" />
+    <EntitySet Name="Recipes" EntityType="Self.Recipes" />
+    <AssociationSet Name="FK__Product__CateId__47DBAE45" Association="Self.FK__Product__CateId__47DBAE45">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FeedBack_Customer" Association="Self.FK_FeedBack_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="FeedBack" EntitySet="FeedBack" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Customer" Association="Self.FK_Order_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceDetailBook_Order" Association="Self.FK_InvoiceDetailBook_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="InvoiceDetailBook" EntitySet="InvoiceDetailBook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceDetailBook_Product" Association="Self.FK_InvoiceDetailBook_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="InvoiceDetailBook" EntitySet="InvoiceDetailBook" />
+    </AssociationSet>
+    <EntitySet Name="Manufacture" EntityType="PrjiceCreamModel.Manufacture" />
+    <AssociationSet Name="FK__Product__ManuId__31EC6D26" Association="PrjiceCreamModel.FK__Product__ManuId__31EC6D26">
+      <End Role="Manufacture" EntitySet="Manufacture" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Manufacture">
+    <Key>
+      <PropertyRef Name="ManuId" />
+    </Key>
+    <Property Name="ManuId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Product" Relationship="PrjiceCreamModel.FK__Product__ManuId__31EC6D26" FromRole="Manufacture" ToRole="Product" />
+  </EntityType>
+  <Association Name="FK__Product__ManuId__31EC6D26">
+    <End Type="PrjiceCreamModel.Manufacture" Role="Manufacture" Multiplicity="1" />
+    <End Type="PrjiceCreamModel.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manufacture">
+        <PropertyRef Name="ManuId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ManuId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

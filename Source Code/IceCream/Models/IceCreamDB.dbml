@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PrjIceCream" Class="IceCreamDBData" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=PrjIceCream;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="PrjIceCreamConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Customer" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="CustomerId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerEmail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CustomerPassword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CustomerName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CustomerPhone" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CustomerAddress" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DateRegister" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CustomerRole" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

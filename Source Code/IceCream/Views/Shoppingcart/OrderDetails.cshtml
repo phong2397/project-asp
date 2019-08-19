@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "OrderDetails";
+
+}
+
+
+@using IceCream.Models
+@model IEnumerable<IceCream.Models.UserOrderDetail>
+
+<div class="super_container">
+    <div class="cart_info">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Column Titles -->
+                    <div class="cart_info_columns clearfix">
+                        <div class="cart_info_col cart_info_col_product">Product</div>
+                        <div class="cart_info_col cart_info_col_price">Price</div>
+                        <div class="cart_info_col cart_info_col_quantity">Quantity</div>
+                        <div class="cart_info_col cart_info_col_total">Total</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cart_items_row">
+                <div class="col">
+
+                    <!-- Cart Item -->
+                    @foreach (var item in Model)
+                    {
+                        <div class="cart_item d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+                            <!-- Name -->
+                            <div class="cart_item_product d-flex flex-row align-items-center justify-content-start">
+                                <div class="cart_item_image">
+                                    <div><img src="@item.Image" alt=""></div>
+                                </div>
+                                <div class="cart_item_name_container">
+                                    <div class="cart_item_name"><a href="#">@item.Name</a></div>
+                                    <div class="cart_item_edit"><a href="#">@item.OrderDate</a></div>
+                                </div>
+                            </div>
+
+                            <!-- Price -->
+                            <div class="cart_item_price">$@item.Price</div>
+                            <!-- Quantity -->
+                            <div class="cart_item_quantity">
+                                <div class="product_quantity_container">
+                                    @*<div class="product_quantity clearfix">*@
+                                    <h4>@item.Quantity</h4>
+
+                                    @*</div>*@
+                                </div>
+                            </div>
+                            <!-- Total -->
+                            <div class="cart_item_total">$@(item.Price * item.Quantity)</div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

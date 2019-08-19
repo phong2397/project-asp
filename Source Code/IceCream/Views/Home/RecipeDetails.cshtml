@@ -1,0 +1,41 @@
+﻿@model IceCream.Models.Recipe
+
+@{
+
+    ViewBag.Title = "Recipe Details";
+}
+
+
+<h2 class="hh2">@Html.DisplayFor(model => model.Title)</h2>
+
+<div class="container">
+    @{ 
+        string preFix = "https://www.youtube.com/embed/";
+        string YT = Model.LinkYT;
+        YT = YT.Substring(32);
+        YT = preFix + YT;
+    }
+    <div>
+        <div>
+            <center><iframe width="700" height="400" src="@YT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        </div>
+    </div>
+
+
+
+
+    <!--Button See More Recipes-->
+    <center>
+        <a href="@Url.Action("FullRecipes", "Home")">
+            <button style="margin: 50px; padding: 10px; padding-left: 150px; padding-right: 150px;
+        border-radius: 10px; background: #ffe82b; text-decoration: none; font-family: 'Satisfy', cursive; font-size: 30px; color: white;">
+                See Premium Recipes...
+            </button>
+        </a>
+    </center>
+
+</div>
+
+
+<link rel="stylesheet" type="text/css" href="~/Content/styledetails.css">
+

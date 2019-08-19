@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="PrjiceCreamModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="Username" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="CateId" />
+          </Key>
+          <Property Name="CateId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FeedBack">
+          <Key>
+            <PropertyRef Name="ContactId" />
+          </Key>
+          <Property Name="ContactId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerId" Type="int" />
+          <Property Name="Subject" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Content" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="InvoiceDetailBook">
+          <Key>
+            <PropertyRef Name="InvoiceDetailId" />
+          </Key>
+          <Property Name="InvoiceDetailId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+          <Property Name="InvoiceId" Type="int" Nullable="false" />
+          <Property Name="SubTotal" Type="float" Nullable="false" />
+          <Property Name="Price" Type="float" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Manufacture">
+          <Key>
+            <PropertyRef Name="ManuId" />
+          </Key>
+          <Property Name="ManuId" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+          <Property Name="Name" Nullable="false" MaxLength="50" Type="varchar" />
+          <Property Name="Address" Nullable="false" MaxLength="50" Type="varchar" />
+          <Property Name="Phone" Nullable="false" MaxLength="15" Type="varchar" />
+          <Property Name="Email" Nullable="false" MaxLength="50" Type="varchar" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="InvoiceId" />
+          </Key>
+          <Property Name="InvoiceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="CustomerAddress" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="OrderDate" Type="date" Nullable="false" />
+          <Property Name="Payment" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="OrderStatus" Type="bit" Nullable="false" />
+          <Property Name="Total" Type="int" Nullable="false" />
+          <Property Name="CustomerId" Type="int" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="ProductId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CateId" Type="int" Nullable="false" />
+          <Property Name="ManuId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Date" Type="date" Nullable="false" />
+          <Property Name="Price" Type="float" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="Image" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Product__CateId__47DBAE45">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="CateId" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="CateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Product__ManuId__31EC6D26">
+          <End Type="Self.Manufacture" Multiplicity="1" Role="Manufacture" />
+          <End Type="Self.Product" Multiplicity="*" Role="Product" />
+          <ReferentialConstraint>
+            <Principal Role="Manufacture">
+              <PropertyRef Name="ManuId" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="ManuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InvoiceDetailBook_Order">
+          <End Role="Order" Type="Self.Order" Multiplicity="1" />
+          <End Role="InvoiceDetailBook" Type="Self.InvoiceDetailBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="InvoiceId" />
+            </Principal>
+            <Dependent Role="InvoiceDetailBook">
+              <PropertyRef Name="InvoiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InvoiceDetailBook_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="InvoiceDetailBook" Type="Self.InvoiceDetailBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="InvoiceDetailBook">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PrjiceCreamModelStoreContainer">
+          <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FeedBack" EntityType="Self.FeedBack" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="InvoiceDetailBook" EntityType="Self.InvoiceDetailBook" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Manufacture" EntityType="Self.Manufacture" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Product__CateId__47DBAE45" Association="Self.FK__Product__CateId__47DBAE45">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Product__ManuId__31EC6D26" Association="Self.FK__Product__ManuId__31EC6D26">
+            <End EntitySet="Manufacture" Role="Manufacture" />
+            <End EntitySet="Product" Role="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InvoiceDetailBook_Order" Association="Self.FK_InvoiceDetailBook_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="InvoiceDetailBook" EntitySet="InvoiceDetailBook" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InvoiceDetailBook_Product" Association="Self.FK_InvoiceDetailBook_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="InvoiceDetailBook" EntitySet="InvoiceDetailBook" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PrjiceCreamModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="Username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="PrjiceCreamEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Admin" EntityType="Self.Admin" />
+          <EntitySet Name="Category" EntityType="PrjiceCreamModel.Category" />
+          <EntitySet Name="Manufacture" EntityType="PrjiceCreamModel.Manufacture" />
+          <EntitySet Name="Product" EntityType="PrjiceCreamModel.Product" />
+          <AssociationSet Name="FK__Product__CateId__47DBAE45" Association="PrjiceCreamModel.FK__Product__CateId__47DBAE45">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Product__ManuId__31EC6D26" Association="PrjiceCreamModel.FK__Product__ManuId__31EC6D26">
+            <End EntitySet="Manufacture" Role="Manufacture" />
+            <End EntitySet="Product" Role="Product" />
+          </AssociationSet>
+          <EntitySet Name="FeedBack" EntityType="PrjiceCreamModel.FeedBack" />
+          <EntitySet Name="InvoiceDetailBook" EntityType="PrjiceCreamModel.InvoiceDetailBook" />
+          <EntitySet Name="Order" EntityType="PrjiceCreamModel.Order" />
+          <AssociationSet Name="FK_InvoiceDetailBook_Order" Association="PrjiceCreamModel.FK_InvoiceDetailBook_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="InvoiceDetailBook" EntitySet="InvoiceDetailBook" />
+          </AssociationSet>
+          <AssociationSet Name="FK_InvoiceDetailBook_Product" Association="PrjiceCreamModel.FK_InvoiceDetailBook_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="InvoiceDetailBook" EntitySet="InvoiceDetailBook" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="CateId" />
+          </Key>
+          <Property Name="CateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Product" Relationship="PrjiceCreamModel.FK__Product__CateId__47DBAE45" FromRole="Category" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Manufacture">
+          <Key>
+            <PropertyRef Name="ManuId" />
+          </Key>
+          <Property Name="ManuId" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+          <Property Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="Address" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="Phone" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="Email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+          <NavigationProperty Name="Product" Relationship="PrjiceCreamModel.FK__Product__ManuId__31EC6D26" FromRole="Manufacture" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CateId" Type="Int32" Nullable="false" />
+          <Property Name="ManuId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Image" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Category" Relationship="PrjiceCreamModel.FK__Product__CateId__47DBAE45" FromRole="Product" ToRole="Category" />
+          <NavigationProperty Name="Manufacture" Relationship="PrjiceCreamModel.FK__Product__ManuId__31EC6D26" FromRole="Product" ToRole="Manufacture" />
+          <NavigationProperty Name="InvoiceDetailBook" Relationship="PrjiceCreamModel.FK_InvoiceDetailBook_Product" FromRole="Product" ToRole="InvoiceDetailBook" />
+        </EntityType>
+        <Association Name="FK__Product__CateId__47DBAE45">
+          <End Type="PrjiceCreamModel.Category" Role="Category" Multiplicity="1" />
+          <End Type="PrjiceCreamModel.Product" Role="Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="CateId" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="CateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Product__ManuId__31EC6D26">
+          <End Type="PrjiceCreamModel.Manufacture" Multiplicity="1" Role="Manufacture" />
+          <End Type="PrjiceCreamModel.Product" Multiplicity="*" Role="Product" />
+          <ReferentialConstraint>
+            <Principal Role="Manufacture">
+              <PropertyRef Name="ManuId" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="ManuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="FeedBack">
+          <Key>
+            <PropertyRef Name="ContactId" />
+          </Key>
+          <Property Name="ContactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerId" Type="Int32" />
+          <Property Name="Subject" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Content" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="InvoiceDetailBook">
+          <Key>
+            <PropertyRef Name="InvoiceDetailId" />
+          </Key>
+          <Property Name="InvoiceDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <Property Name="InvoiceId" Type="Int32" Nullable="false" />
+          <Property Name="SubTotal" Type="Double" Nullable="false" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Order" Relationship="PrjiceCreamModel.FK_InvoiceDetailBook_Order" FromRole="InvoiceDetailBook" ToRole="Order" />
+          <NavigationProperty Name="Product" Relationship="PrjiceCreamModel.FK_InvoiceDetailBook_Product" FromRole="InvoiceDetailBook" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="InvoiceId" />
+          </Key>
+          <Property Name="InvoiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CustomerAddress" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Payment" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="OrderStatus" Type="Boolean" Nullable="false" />
+          <Property Name="Total" Type="Int32" Nullable="false" />
+          <Property Name="CustomerId" Type="Int32" />
+          <NavigationProperty Name="InvoiceDetailBook" Relationship="PrjiceCreamModel.FK_InvoiceDetailBook_Order" FromRole="Order" ToRole="InvoiceDetailBook" />
+        </EntityType>
+        <Association Name="FK_InvoiceDetailBook_Order">
+          <End Type="PrjiceCreamModel.Order" Role="Order" Multiplicity="1" />
+          <End Type="PrjiceCreamModel.InvoiceDetailBook" Role="InvoiceDetailBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="InvoiceId" />
+            </Principal>
+            <Dependent Role="InvoiceDetailBook">
+              <PropertyRef Name="InvoiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_InvoiceDetailBook_Product">
+          <End Type="PrjiceCreamModel.Product" Role="Product" Multiplicity="1" />
+          <End Type="PrjiceCreamModel.InvoiceDetailBook" Role="InvoiceDetailBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="InvoiceDetailBook">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PrjiceCreamModelStoreContainer" CdmEntityContainer="PrjiceCreamEntities1">
+          <EntitySetMapping Name="Admin">
+            <EntityTypeMapping TypeName="PrjiceCreamModel.Admin">
+              <MappingFragment StoreEntitySet="Admin">
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Category">
+            <EntityTypeMapping TypeName="PrjiceCreamModel.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CateId" ColumnName="CateId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Manufacture">
+            <EntityTypeMapping TypeName="PrjiceCreamModel.Manufacture">
+              <MappingFragment StoreEntitySet="Manufacture">
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ManuId" ColumnName="ManuId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product">
+            <EntityTypeMapping TypeName="PrjiceCreamModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ManuId" ColumnName="ManuId" />
+                <ScalarProperty Name="CateId" ColumnName="CateId" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FeedBack">
+            <EntityTypeMapping TypeName="PrjiceCreamModel.FeedBack">
+              <MappingFragment StoreEntitySet="FeedBack">
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="InvoiceDetailBook">
+            <EntityTypeMapping TypeName="PrjiceCreamModel.InvoiceDetailBook">
+              <MappingFragment StoreEntitySet="InvoiceDetailBook">
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+                <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="InvoiceDetailId" ColumnName="InvoiceDetailId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Order">
+            <EntityTypeMapping TypeName="PrjiceCreamModel.Order">
+              <MappingFragment StoreEntitySet="Order">
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+                <ScalarProperty Name="Payment" ColumnName="Payment" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

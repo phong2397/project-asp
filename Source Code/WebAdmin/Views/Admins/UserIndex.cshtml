@@ -1,0 +1,55 @@
+﻿@model IEnumerable<WebAdmin.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>User List</h2>
+    <p>
+    @Html.ActionLink("Add New User", "UserCreate","", new { @class = "btn btn-primary" })
+</p>
+<div>
+    @using (Html.BeginForm("UserIndex", "Admins", FormMethod.Get))
+    {
+
+        <label>Search by name:</label>
+        <input type="text" name="uName" placeholder="Enter any character" />
+        <input type="submit" value="Search" class="btn btn-warning" />
+
+    }
+</div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerPassword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerPassword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+            
+                @Html.ActionLink("Details", "UserDetails", new { id = item.CustomerId }, new { @class = "btn btn-success" }) 
+              
+            </td>
+        </tr>
+    }
+
+</table>
